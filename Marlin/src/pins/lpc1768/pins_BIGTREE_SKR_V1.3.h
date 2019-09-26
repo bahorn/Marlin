@@ -188,6 +188,10 @@
   #define BEEPER_PIN       P1_30   // (37) not 5V tolerant
   #define BTN_ENC          P0_28   // (58) open-drain
 
+  #if ENABLED(ZONESTAR_LCD)
+    #define ADC_KEYPAD_PIN 4
+  #endif
+
   #if ENABLED(CR10_STOCKDISPLAY)
     #define LCD_PINS_RS    P1_22
 
