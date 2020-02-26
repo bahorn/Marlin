@@ -128,7 +128,7 @@
 //#define BLUETOOTH
 
 // Choose the name from boards.h that matches your setup
-#define MOTHERBOARD BOARD_BIGTREE_SKR_V1_3
+#define MOTHERBOARD BOARD_BTT_SKR_V1_3
 
 // Name displayed in the LCD "Ready" message and Info menu
 #define CUSTOM_MACHINE_NAME "HackBox X1"
@@ -1233,10 +1233,11 @@
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Set the boundaries for probing (where the probe can reach).
-  #define LEFT_PROBE_BED_POSITION 25
-  #define RIGHT_PROBE_BED_POSITION 100// (X_BED_SIZE - (MIN_PROBE_EDGE))
-  #define FRONT_PROBE_BED_POSITION 25
-  #define BACK_PROBE_BED_POSITION 100//(Y_BED_SIZE - (MIN_PROBE_EDGE))
+  // MIN_PROBE_EDGE_LEFT.
+  #define MIN_PROBE_EDGE_LEFT 25
+  #define MIN_PROBE_EDGE_RIGHT 100// (X_BED_SIZE - (MIN_PROBE_EDGE))
+  #define MIN_PROBE_EDGE_FRONT 25
+  #define MIN_PROBE_EDGE_BACK 100//(Y_BED_SIZE - (MIN_PROBE_EDGE))
 
   //#define PROBE_Y_FIRST
 
